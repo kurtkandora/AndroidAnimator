@@ -13,7 +13,6 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
 	private TextView mQuoteLabel;
 	private final Handler mHandler = new Handler();
-	private final Handler mHandler2 = new Handler();
 	private Quote mquote;
 	private MyAnimation manimation;
 	private MyColor mcolor;

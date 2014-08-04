@@ -19,7 +19,7 @@ public class MyAnimation {
 		Random random= new Random();
 		
 		
-		int typeOfAnimation=1+random.nextInt(7);
+		int typeOfAnimation=1+random.nextInt(5);
 		
 		switch (typeOfAnimation) {
 		case 1:
@@ -35,12 +35,6 @@ public class MyAnimation {
 			myAnimation = AnimationUtils.loadAnimation(activity, R.anim.abc_slide_in_top);
 			break;
 		case 5:
-			myAnimation = AnimationUtils.loadAnimation(activity, R.anim.abc_slide_out_bottom);
-			break;
-		case 6:
-			myAnimation = AnimationUtils.loadAnimation(activity, R.anim.abc_slide_out_top);
-			break;
-		case 7:
 			myAnimation = new AlphaAnimation(0,1);
 			myAnimation.setDuration(1500);
 			myAnimation.setFillAfter(true);
